@@ -1,6 +1,6 @@
-import { Code, Palette, Zap, Users } from "lucide-react";
+import { Code, Server, Zap, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import profilePhoto from "@/assets/profile-photo.jpeg";
+import profilePhoto from "@/assets/IMG_1206.png";
 
 const About = () => {
   const skills = [
@@ -8,12 +8,12 @@ const About = () => {
       icon: Code,
       title: "Desenvolvimento",
       description:
-        "Experiência em React, Node.js, TypeScript e tecnologias modernas",
+        "Experiência em Java, Angular, Node.js, TypeScript e tecnologias modernas",
     },
     {
-      icon: Palette,
-      title: "Design",
-      description: "UI/UX design com foco na experiência do usuário",
+      icon: Server,
+      title: "DevOps",
+      description: "Experiência em CI/CD, automação e gerenciamento de servidores",
     },
     {
       icon: Zap,
@@ -66,13 +66,13 @@ const About = () => {
               <div className="space-y-4 text-muted-foreground mb-8">
                 <p>
                   Sou um desenvolvedor full stack com experiência em aplicações
-                  web e mobile, buscando sempre unir eficiência técnica com
+                  web, buscando sempre unir eficiência técnica com
                   interfaces bem pensadas.
                 </p>
 
                 <p>
-                  Trabalho principalmente com React, React Native TypeScript e
-                  Node.js, além de explorar tecnologias cloud. Estou sempre em
+                  Trabalho principalmente com Java e
+                  Angular, além de explorar tecnologias cloud. Estou sempre em
                   evolução, aprendendo novas ferramentas e aplicando boas
                   práticas para entregar projetos de alto nível.
                 </p>
