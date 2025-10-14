@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import project1 from "@/assets/project1.png";
+import project1 from "@/assets/projeto1.png";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
 import project4 from "@/assets/project4.jpeg";
@@ -13,20 +13,21 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Sistema Fasiclin - Gestão de Profissionais - Mobile",
+      title: "Sistema Web - SEFAZ PE",
       description:
-        "Aplicação Full Stack para gestão de profissionais, integrando cadastro, listagem, edição, inativação/reativação e filtros dinâmicos por especialidade com autenticação JWT.",
+        "Desenvolvimento do sistema DEF - Declaração Econômico-Fiscal. Sistema robusto para a Secretaria da Fazenda com arquitetura moderna.",
       image: project1,
       technologies: [
-        "React Native",
-        "TypeScript",
-        "Node.js",
-        "Express",
-        "MySQL",
-        "Expo",
+        "Angular",
+        "Java",
+        "Spring Boot",
+        "SQL Server",
+        "Gitlab CI/CD",
+        "ArgoCD",
+        "Docker",
+        "Scrum Agile",
       ],
-      github: "https://github.com/JoaoLemes18/fasiclinapp",
-      demo: "https://github.com/JoaoLemes18/fasiclinapp",
+      demo: "https://conformidade.sefaz.pe.gov.br/",
     },
     {
       id: 2,
