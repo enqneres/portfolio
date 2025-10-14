@@ -1,6 +1,6 @@
 import { Code, Server, Zap, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import profilePhoto from "@/assets/IMG_1206.png";
+import profilePhoto from "@/assets/IMG_0571.jpg";
 
 const About = () => {
   const skills = [
@@ -8,7 +8,7 @@ const About = () => {
       icon: Code,
       title: "Desenvolvimento",
       description:
-        "Experiência em Java, Angular, Node.js, TypeScript e tecnologias modernas",
+        "Experiência em Java, Angular, React, Node.js, TypeScript e tecnologias modernas",
     },
     {
       icon: Server,

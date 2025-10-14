@@ -56,7 +56,7 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex justify-center space-x-6 mb-12">
               <a
-                href="https://github.com/JoaoLemes18"
+                href="https://github.com/enqneres"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-background/10 backdrop-blur-sm border border-border hover:bg-primary hover:text-white transition-all duration-300 hover-lift"
@@ -64,7 +64,7 @@ const Hero = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/joaolemes18/"
+                href="https://www.linkedin.com/in/enoqueneres/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-background/10 backdrop-blur-sm border border-border hover:bg-primary hover:text-white transition-all duration-300 hover-lift"
@@ -72,7 +72,7 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:joaolemes17@hotmail.com"
+                href="mailto:enoque.sneres@gmail.com"
                 className="p-3 rounded-full bg-background/10 backdrop-blur-sm border border-border hover:bg-primary hover:text-white transition-all duration-300 hover-lift"
               >
                 <Mail size={24} />

@@ -6,7 +6,7 @@ const Footer = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:joaolemes17@hotmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:enoque.sneres@gmail.com", label: "Email" },
   ];
 
   const scrollToTop = () => {
@@ -69,9 +69,9 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mb-4">Contato</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>joaolemes17@hotmail.com</p>
-                <p>Cuiabá, Brasil</p>
-                <p>+55 65 99979-8208</p>
+                <p>enoque.sneres@gmail.com</p>
+                <p>Parnaíba - PI, Brasil</p>
+                <p>+55 91 98179-0257</p>
               </div>
             </div>
           </div>

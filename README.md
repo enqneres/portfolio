@@ -20,7 +20,7 @@ O site é totalmente responsivo, moderno e construído com foco em performance e
 
 ```bash
 # Clone o repositório
-git clone https://github.com/JoaoLemes18/portfolio.git
+git clone https://github.com/enqneres/portfolio.git
 
 # Acesse a pasta
 cd portfolio

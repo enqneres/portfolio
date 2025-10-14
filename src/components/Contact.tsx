@@ -5,19 +5,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "joaolemes17@hotmail.com",
-      link: "mailto:joaolemes17@hotmail.com",
+      value: "enoque.sneres@gmail.com",
+      link: "mailto:enoque.sneres@gmail.com",
     },
     {
       icon: Phone,
       title: "Telefone",
-      value: "+55 65 99979-8208",
-      link: "tel:+5565999798208",
+      value: "+55 91 98179-0257",
+      link: "tel:+5591981790257",
     },
     {
       icon: MapPin,
       title: "Localização",
-      value: "Cuiabá - MT",
+      value: "Parnaíba - PI",
       link: null,
     },
   ];

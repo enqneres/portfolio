@@ -12,10 +12,12 @@ import {
   Database,
   Cog,
   Lock,
+  Brain,
+  GemIcon,
 } from "lucide-react";
 
 // Ícones das stacks
-import { FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaGitAlt, FaAngular, FaJava, FaMicrosoft } from "react-icons/fa";
 import {
   SiTypescript,
   SiTailwindcss,
@@ -33,6 +35,16 @@ import {
   SiJsonwebtokens,
   SiSqlite,
   SiDocker,
+  SiSpringboot,
+  SiQuarkus,
+  SiPostgresql,
+  SiMongodb,
+  SiGooglecloud,
+  SiKubernetes,
+  SiRabbitmq,
+  SiGooglegemini,
+  SiClaude,
+  SiGithubcopilot,
 } from "react-icons/si";
 
 type TechItem = { name: string; note?: string; icon?: React.ElementType };
@@ -47,48 +59,52 @@ const CATEGORIES: {
     icon: Globe,
     items: [
       { name: "React", icon: FaReact },
+      { name: "Angular", icon: FaAngular },
       { name: "TypeScript", icon: SiTypescript },
-      { name: "Vite", icon: SiVite },
-      { name: "SASS/CSS" },
-      { name: "Tailwind CSS", icon: SiTailwindcss },
-      { name: "shadcn/ui" },
-      { name: "React Router DOM" },
+      // { name: "Vite", icon: SiVite },
+      { name: "SCSS/CSS" },
+      // { name: "Tailwind CSS", icon: SiTailwindcss },
+      // { name: "shadcn/ui" },
+      // { name: "React Router DOM" },
     ],
   },
+  // {
+  //   title: "Mobile",
+  //   icon: Smartphone,
+  //   items: [
+  //     { name: "React Native", icon: FaReact },
+  //     { name: "Expo", icon: SiExpo },
+  //     { name: "Expo Router", icon: SiExpo },
+  //     { name: "React Navigation", note: "Rotas" },
+  //     { name: "React Query", note: "@tanstack/react-query" },
+  //     { name: "AsyncStorage", note: "Sessão/Persistência" },
+  //     { name: "Axios", icon: SiAxios, note: "HTTP" },
+  //   ],
+  // },
   {
-    title: "Mobile",
-    icon: Smartphone,
-    items: [
-      { name: "React Native", icon: FaReact },
-      { name: "Expo", icon: SiExpo },
-      { name: "Expo Router", icon: SiExpo },
-      { name: "React Navigation", note: "Rotas" },
-      { name: "React Query", note: "@tanstack/react-query" },
-      { name: "AsyncStorage", note: "Sessão/Persistência" },
-      { name: "Axios", icon: SiAxios, note: "HTTP" },
-    ],
-  },
-  {
-    title: "Backend (Node.js)",
+    title: "Backend",
     icon: Server,
     items: [
       { name: "Node.js", icon: FaNodeJs },
-      { name: "Express" },
-      { name: "TypeScript", icon: SiTypescript },
-      { name: "Prisma ORM", icon: SiPrisma },
-      { name: "Sequelize", icon: SiSequelize },
+      { name: "Java", icon: FaJava },
+      { name: "Spring Boot", icon: SiSpringboot },
+      { name: "Quarkus", icon: SiQuarkus },
+      // { name: "Express" },
+      // { name: "TypeScript", icon: SiTypescript },
+      // { name: "Prisma ORM", icon: SiPrisma },
+      // { name: "Sequelize", icon: SiSequelize },
       { name: "JWT", note: "Auth", icon: SiJsonwebtokens },
-      { name: "MVC", note: "Arquitetura" },
+      // { name: "MVC", note: "Arquitetura" },
     ],
   },
   {
-    title: ".NET / C#",
-    icon: Cog,
+    title: "IA",
+    icon: Brain,
     items: [
-      { name: "ASP.NET Core", icon: SiDotnet },
-      { name: "Entity Framework Core", note: "ORM" },
-      { name: "Swashbuckle / Swagger", note: "OpenAPI", icon: SiSwagger },
-      { name: "HttpClient", note: "Integrações" },
+      { name: "Gemini", icon: SiGooglegemini },
+      { name: "Claude", icon: SiClaude },
+      { name: "ChatGPT", icon: SiOpenai },
+      { name: "Github Copilot", icon: SiGithubcopilot }
     ],
   },
   {
@@ -96,10 +112,13 @@ const CATEGORIES: {
     icon: Database,
     items: [
       { name: "MySQL", icon: SiMysql },
-      { name: "SQLite", icon: SiSqlite },
-      { name: "Prisma ORM", icon: SiPrisma },
-      { name: "Sequelize", icon: SiSequelize },
-      { name: "EF Core + MySQL", note: "Provider .NET" },
+      { name: "SQL Server" },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MongoDB", icon: SiMongodb },
+      // { name: "SQLite", icon: SiSqlite },
+      // { name: "Prisma ORM", icon: SiPrisma },
+      // { name: "Sequelize", icon: SiSequelize },
+      // { name: "EF Core + MySQL", note: "Provider .NET" },
     ],
   },
   {
@@ -107,11 +126,14 @@ const CATEGORIES: {
     icon: Cpu,
     items: [
       { name: "REST APIs", note: "Padrões e versionamento" },
-      { name: "ESLint + Prettier", icon: SiEslint },
+      // { name: "ESLint + Prettier", icon: SiEslint },
       { name: "Git / GitHub", icon: FaGitAlt },
-      { name: "OpenAI API", icon: SiOpenai, note: "Integração de IA" },
+      { name: "Azure Devops" },
       { name: "Docker", icon: SiDocker },
-      { name: "AWS", icon: SiAmazon, note: "Cloud & Infra" }, // 🔹 adicionado
+      { name: "AWS", icon: SiAmazon, note: "Cloud & Infra" },
+      { name: "GCP", icon: SiGooglecloud},
+      { name: "Kubernetes", icon: SiKubernetes },
+      { name: "RabbitMQ", icon: SiRabbitmq, note: "Mensageria" },
     ],
   },
 ];
@@ -139,7 +161,7 @@ const TechStack = () => {
               Minhas <span className="text-primary">Tecnologias</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Stack usada nos meus projetos — web, mobile e backend.
+              Stack usada nos meus projetos — web e backend.
             </p>
           </div>
 
