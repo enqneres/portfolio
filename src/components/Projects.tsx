@@ -2,8 +2,8 @@ import { ExternalLink, Github } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import project1 from "@/assets/projeto1.png";
-import project2 from "@/assets/project2.jpg";
-import project3 from "@/assets/project3.jpg";
+import project2 from "@/assets/projeto2.jpg";
+import project3 from "@/assets/projeto3.jpg";
 import project4 from "@/assets/project4.jpeg";
 import project5 from "@/assets/project5.jpg";
 import project6 from "@/assets/project6.png";
@@ -31,39 +31,36 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Sistema Fasiclin - Gestão Hospitalar - Web",
+      title: "Fake Shop",
       description:
-        "Aplicação Full Stack para otimizar a gestão de pacientes, agendamentos e prontuários eletrônicos na clínica-escola, integrando frontend e backend em um fluxo unificado.",
+        "Aplicação desenvolvida para demonstrar práticas de CI/CD pipeline para deploy automático.",
       image: project2,
       technologies: [
-        "React",
-        "TypeScript",
-        "Redux Toolkit",
-        "Node.js",
-        "Express",
-        "Sequelize",
-        "MySQL",
+        "JavaScript",
+        "Python",
+        "Kubernetes",
+        "Docker",
+        "GitHub Actions",
       ],
-      github: "https://github.com/JoaoLemes18/SistemaClinica",
+      github: "https://github.com/enqneres/fake-shop",
     },
     {
       id: 3,
-      title: "Plataforma de Cursos - Full Stack",
+      title: "Review Video",
       description:
-        "Plataforma completa para gestão de cursos técnicos com interfaces para alunos, professores e coordenadores. Frontend em React.js + TypeScript e backend em C# (.NET Core) com autenticação JWT e sistema de permissões.",
+        "Aplicação desenvolvida para subir em ambiente Kubernetes direto no Azure e práticas de monitoramento usando Prometheus e Grafana.",
       image: project3,
       technologies: [
-        "React",
-        "TypeScript",
-        "C#",
-        ".NET Core",
-        "SQL Server",
-        "Entity Framework",
-        "JWT",
-        "Vite",
+        "Kubernetes",
+        "Docker",
+        "Azure",
+        "Grafana",
+        "Prometheus",
+        "Terraform",
+        "GitHub Actions",
       ],
-      github: "https://github.com/JoaoLemes18/plataforma-cursos",
-      backend: "https://github.com/JoaoLemes18/PlataformaCursosAPI",
+      github: "https://github.com/enqneres/reviewvideo",
+      backend: "",
       demo: undefined,
     },
     {
