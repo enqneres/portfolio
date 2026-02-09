@@ -10,9 +10,9 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      title: "Telefone",
+      title: "Telefone / WhatsApp",
       value: "+55 91 98179-0257",
-      link: "tel:+5591981790257",
+      link: "https://wa.me/5591981790257?text=Olá, gostaria de saber mais!",
     },
     {
       icon: MapPin,

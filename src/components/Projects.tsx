@@ -63,83 +63,83 @@ const Projects = () => {
       backend: "",
       demo: undefined,
     },
-    {
-      id: 4,
-      title: "E-commerce de plantas",
-      description:
-        "E-commerce desenvolvido na Compass UOL, seguindo os padrões solicitados.",
-      image: project4,
-      technologies: [
-        "React Native",
-        "TypeScript",
-        "Firebase",
-        "Redux",
-        "Async Storage",
-        "Expo",
-      ],
-      github: "https://github.com/JoaoLemes18/PlantParadise",
-      demo: undefined,
-    },
-    {
-      id: 5,
-      title: "EduIa",
-      description:
-        "Aplicativo educacional desenvolvido para professores e educadores, que integra Inteligência Artificial para auxiliar na criação de conteúdos pedagógicos.",
-      image: project5,
-      technologies: [
-        "React Native",
-        "TypeScript",
-        "Node.js",
-        "MySQL",
-        "Axios",
-        "JWT",
-        "OpenAI",
-        "React Query",
-        "Async Storage",
-        "Expo",
-      ],
-      github: "https://github.com/JoaoLemes18/EduIA",
-      demo: undefined,
-    },
-    {
-      id: 6,
-      title:
-        "Alavancagem Patrimonial - Dashboard de Investimentos Imobiliários",
-      description:
-        "Aplicação Full Stack para análise de investimentos imobiliários. O sistema calcula lucro líquido estimado, total investido e exibe gráficos interativos de performance por imóvel e composição de custos, integrando backend com Prisma/Express e frontend em React + Tailwind.",
-      image: project6, // adicione a imagem do dashboard na pasta assets e ajuste o caminho
-      technologies: [
-        "React",
-        "TypeScript",
-        "Vite",
-        "TailwindCSS",
-        "Recharts",
-        "Node.js",
-        "Express",
-        "Prisma",
-        "MySQL",
-      ],
-      github: "https://github.com/JoaoLemes18/patrimonial-imoveis", // coloque o repositório certo
-      demo: undefined,
-    },
-    {
-      id: 7,
-      title: "Gerenciador de Dispositivos - MVP",
-      description:
-        "Aplicativo mobile para gestão de estoque de smartphones. Permite cadastrar, editar, remover, filtrar e exportar relatórios em PDF. Desenvolvido como MVP para validar a ideia, já em uso real no dia a dia.",
-      image: project7, // adicione a imagem na pasta assets e importe no topo
-      technologies: [
-        "React Native",
-        "TypeScript",
-        "Expo",
-        "SQLite",
-        "Expo Camera",
-        "Context API",
-        "PDF Export",
-      ],
-      github: "https://github.com/JoaoLemes18/GestaoEstoque-Celulares",
-      demo: undefined,
-    },
+    // {
+    //   id: 4,
+    //   title: "E-commerce de plantas",
+    //   description:
+    //     "E-commerce desenvolvido na Compass UOL, seguindo os padrões solicitados.",
+    //   image: project4,
+    //   technologies: [
+    //     "React Native",
+    //     "TypeScript",
+    //     "Firebase",
+    //     "Redux",
+    //     "Async Storage",
+    //     "Expo",
+    //   ],
+    //   github: "https://github.com/JoaoLemes18/PlantParadise",
+    //   demo: undefined,
+    // },
+    // {
+    //   id: 5,
+    //   title: "EduIa",
+    //   description:
+    //     "Aplicativo educacional desenvolvido para professores e educadores, que integra Inteligência Artificial para auxiliar na criação de conteúdos pedagógicos.",
+    //   image: project5,
+    //   technologies: [
+    //     "React Native",
+    //     "TypeScript",
+    //     "Node.js",
+    //     "MySQL",
+    //     "Axios",
+    //     "JWT",
+    //     "OpenAI",
+    //     "React Query",
+    //     "Async Storage",
+    //     "Expo",
+    //   ],
+    //   github: "https://github.com/JoaoLemes18/EduIA",
+    //   demo: undefined,
+    // },
+    // {
+    //   id: 6,
+    //   title:
+    //     "Alavancagem Patrimonial - Dashboard de Investimentos Imobiliários",
+    //   description:
+    //     "Aplicação Full Stack para análise de investimentos imobiliários. O sistema calcula lucro líquido estimado, total investido e exibe gráficos interativos de performance por imóvel e composição de custos, integrando backend com Prisma/Express e frontend em React + Tailwind.",
+    //   image: project6, // adicione a imagem do dashboard na pasta assets e ajuste o caminho
+    //   technologies: [
+    //     "React",
+    //     "TypeScript",
+    //     "Vite",
+    //     "TailwindCSS",
+    //     "Recharts",
+    //     "Node.js",
+    //     "Express",
+    //     "Prisma",
+    //     "MySQL",
+    //   ],
+    //   github: "https://github.com/JoaoLemes18/patrimonial-imoveis", // coloque o repositório certo
+    //   demo: undefined,
+    // },
+    // {
+    //   id: 7,
+    //   title: "Gerenciador de Dispositivos - MVP",
+    //   description:
+    //     "Aplicativo mobile para gestão de estoque de smartphones. Permite cadastrar, editar, remover, filtrar e exportar relatórios em PDF. Desenvolvido como MVP para validar a ideia, já em uso real no dia a dia.",
+    //   image: project7, // adicione a imagem na pasta assets e importe no topo
+    //   technologies: [
+    //     "React Native",
+    //     "TypeScript",
+    //     "Expo",
+    //     "SQLite",
+    //     "Expo Camera",
+    //     "Context API",
+    //     "PDF Export",
+    //   ],
+    //   github: "https://github.com/JoaoLemes18/GestaoEstoque-Celulares",
+    //   demo: undefined,
+    // },
   ];
 
   return (
@@ -289,7 +289,7 @@ const Projects = () => {
               className="border-primary text-primary hover:bg-primary hover:text-white"
             >
               <a
-                href="https://github.com/JoaoLemes18?tab=repositories"
+                href="https://github.com/enqneres?tab=repositories"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Ver todos os projetos no GitHub"

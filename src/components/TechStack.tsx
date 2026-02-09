@@ -45,6 +45,7 @@ import {
   SiGooglegemini,
   SiClaude,
   SiGithubcopilot,
+  SiOracle,
 } from "react-icons/si";
 
 type TechItem = { name: string; note?: string; icon?: React.ElementType };
@@ -115,6 +116,7 @@ const CATEGORIES: {
       { name: "SQL Server" },
       { name: "PostgreSQL", icon: SiPostgresql },
       { name: "MongoDB", icon: SiMongodb },
+      { name: "Oracle DB", icon: SiOracle },
       // { name: "SQLite", icon: SiSqlite },
       // { name: "Prisma ORM", icon: SiPrisma },
       // { name: "Sequelize", icon: SiSequelize },

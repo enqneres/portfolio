@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,6 +8,7 @@ const Footer = () => {
     { icon: Github, href: "https://github.com", label: "GitHub" },
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
     { icon: Mail, href: "mailto:enoque.sneres@gmail.com", label: "Email" },
+    { icon: FaWhatsapp, href: "https://wa.me/5591981790257?text=Olá, gostaria de saber mais!", label: "WhatsApp" },
   ];
 
   const scrollToTop = () => {
